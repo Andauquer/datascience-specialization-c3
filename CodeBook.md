@@ -2,7 +2,6 @@
 title: "CodeBook"
 author: "Oscar Gabauquer"
 date: "22 de julio de 2019"
-output: html_document
 ---
 
 # LIBRARY REQUIRED
@@ -33,17 +32,17 @@ output: html_document
 	7. Load the features.txt file contents, to a dataframe called featuresLabels.
 
 	8. With the features.txt data loaded, now we have all the names for the 
-       measurements, but these names need to be cleaned from special characters. We'll
-       start by removing the dashes, this is done by a function called "removeDashes".
+           measurements, but these names need to be cleaned from special characters. We'll
+           start by removing the dashes, this is done by a function called "removeDashes".
 
-    9. When the X_train data was loaded, R, by default gave each measurement a generic
-       name, so now we need to rename and give those measurements their respective 
-       name, we'll do this by renaming all the columns with the function "colnames"
-       assigning them the names we cleaned from the featuresLabels data set.
+   	9. When the X_train data was loaded, R, by default gave each measurement a generic
+           name, so now we need to rename and give those measurements their respective 
+           name, we'll do this by renaming all the columns with the function "colnames"
+           assigning them the names we cleaned from the featuresLabels data set.
 
-   10. Select only the measurements from the trainFeatureVectors data set that we care, 
-       in this case, the ones that are mean and std measurements. We'll do this by 
-       following two steps:
+  	10. Select only the measurements from the trainFeatureVectors data set that we care, 
+            in this case, the ones that are mean and std measurements. We'll do this by 
+            following two steps:
 
    	   1. Select all the non duplicated columns in the trainFeatureVectors data set, 
    	      since there are duplicated columns, and these, cause the dplyr functions to 
